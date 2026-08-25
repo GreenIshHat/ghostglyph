@@ -1,0 +1,12 @@
+[package]
+name = "ghostglyph"
+version = "0.2.2"
+edition = "2021"
+description = "Reveal invisible Unicode before your tools consume it."
+license-file = "LICENSE-LUNA.md"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+panic = "abort"
